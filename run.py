@@ -181,6 +181,13 @@ def main():
             shap = "oobb_holes"
             objects.append(ob.oe(t="n", s=shap, radius_name=radius_name, pos=pos, width=width, height=height, loc=hs,holes = holes, m=""))
 
+            ## add button clearance cylinder
+            radius = 45    
+            depth = 10
+            x,y,z = 30,-60,0
+            shap = "oobb_cylinder"
+            objects.append(ob.oe(t="n", s=shap, radius=radius,depth=depth, pos=[x,y,z], m=""))
+
 
 
             #output filename test
@@ -252,6 +259,7 @@ def make_badge():
     objects.append(ob.oe(t="n", s=shap, radius_name=radius_name, pos=pos, width=width, height=height, loc=loc,holes = holes, m=""))
 
 
+    
 
     #only make if stl doesn't exist
     filename = f"outputs/0_badge/3dpr.stl"
