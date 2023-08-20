@@ -6,3 +6,8 @@ wuthering
 bytes
 oshcamp
 helen
+nick
+andra
+sean
+shaun
+shawn
